@@ -1,10 +1,8 @@
 package Hashing;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
-import java.util.stream.Stream;
 
 public class CountingDuplicates {
   // public static int duplicateCount(String text) {

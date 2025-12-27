@@ -1,7 +1,6 @@
 package Hashing;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 public class TwoSum {
@@ -21,6 +20,6 @@ public class TwoSum {
 
     public static void main(String[] args) {
         int[] nums = { 3, 2, 4 };
-        int[] result = twoSum(nums, 6);
+        twoSum(nums, 6);
     }
 }
