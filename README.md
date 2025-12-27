@@ -1,12 +1,12 @@
 # Practice-DSA-in-C++
 
-This repository is **my personal playground for sharpening data-structures-and-algorithms (DSA) skills** with modern C++.  
+This repository is **my personal playground for sharpening data-structures-and-algorithms (DSA) skills** with modern Java/C++.  
 Nothing fancy—just a growing collection of solved problems, small experiments, and reference implementations that help me keep my fundamentals sharp.
 
 ## What you’ll find here
 
 - 🗂️ **Problem-wise folders** (e.g. `arrays/`, `graphs/`, `dp/`) each containing:
-  - One or more C++ source files (`.cpp`)
+  - One or more Java/C++ source files (`.java`,`.cpp`)
   - A brief `README.md` or comment header describing the problem
 - 📝 **Notes**: When a concept trips me up, I drop a short markdown note alongside the code.
 
