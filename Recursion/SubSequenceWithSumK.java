@@ -19,13 +19,13 @@ public class SubSequenceWithSumK {
                 System.out.println(element);
             }
             System.out.println("]");
-        } else if (index == seq.length) {
-            return;
-        } else {
+        } else if (index < seq.length) {
             arr.add(seq[index]);
             printSequence(index + 1, sum, arr, seq);
             arr.removeLast();
             printSequence(index + 1, sum, arr, seq);
+        } else {
+            return;
         }
     }
 
