@@ -39,8 +39,29 @@ public class MaxConsecutiveOnesIII {
         return max;
     }
 
+    public static int longestOnesWithoutQueue(int[] nums, int k) {
+        int max = 0;
+        int left = 0;
+        int right = 0;
+        int kCount = 0;
+        while (right < nums.length) {
+            if (nums[right] == 0) {
+                kCount++;
+            }
+            if (kCount > k) {
+                if (nums[left] == 0) {
+                    kCount--;
+                }
+                left++;
+            }
+            max = Math.max(max, right - left + 1);
+            right++;
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
-        int nums[] = { 0, 0, 1, 1, 1, 0, 0 };
-        System.out.println(longestOnes(nums, 0));
+        int nums[] = { 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0 };
+        System.out.println(longestOnesWithoutQueue(nums, 2));
     }
 }
