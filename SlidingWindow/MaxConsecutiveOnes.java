@@ -6,7 +6,7 @@ public class MaxConsecutiveOnes {
         int left = 0;
         int right = 0;
         while (right < nums.length) {
-            if (nums[left] == 0) {
+            if (nums[left] != 1) {
                 left = right;
             }
             if (nums[right] == 1) {
@@ -20,7 +20,7 @@ public class MaxConsecutiveOnes {
     }
 
     public static void main(String[] args) {
-        int nums[] = { 1, 1, 0, 1, 1, 1 };
+        int nums[] = { 1, 1, 1, 0, 1, 1 };
         System.out.println(findMaxConsecutiveOnes(nums));
     }
 }
