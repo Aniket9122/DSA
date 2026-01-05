@@ -2,12 +2,13 @@ package Hashing;
 
 import java.util.HashMap;
 import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class TopKFrequentElements {
     public static int[] topKFrequent(int[] nums, int k) {
         int result[] = new int[k];
         HashMap<Integer, Integer> map = new HashMap<>();
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>((a, b) -> map.get(a) - map.get(b));
+        Queue<Integer> priorityQueue = new PriorityQueue<>((a, b) -> map.get(a) - map.get(b));
 
         for (Integer i : nums) {
             map.put(i, map.getOrDefault(i, 0) + 1);
